@@ -1,0 +1,73 @@
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width:100%;
+}
+
+tr{
+	border: 1px solid black;
+}
+
+td{
+	border: 1px solid black;
+	font-size: 30px;
+	padding: 20px;
+	text-align: center;
+}
+
+.schedule .top{
+	background: #ffd400;
+	font-weight: bold;
+}
+
+.days{
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	background:#0ad83730;
+}
+
+.number{
+	font-weight: bold;
+	text-align: center;
+	font-size: 60px;
+	background:#0ad8374f;
+}
+
+.block_week {
+	padding: 500px 0;
+	display: block; 
+}
+
+.block_days{
+	padding: 300px 0;
+	display: block; 
+}
+
+
+.menu span {
+  height: 165px;
+  width:100%;
+  border: 1px solid black;
+  border-radius:5px;
+  line-height: 1.5;
+  transition:0.5s;
+  font-weight: bold;
+}
+
+.menu span:hover{
+	background:#d0d0d0;
+	transition:0.5s;
+}
+
+.menu .fixed {
+  position: fixed;
+  z-index:100;
+  margin-left: 80%;
+}
+
+.menu a{
+	text-decoration:none;
+	color:green;
+}

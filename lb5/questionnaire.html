@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+	
+	body{
+		background:#232323;
+		font-family: cursive;
+	}
+
+	form{
+		width:300px;
+		border:1px solid black;
+		padding:30px;
+		border-radius:10px;
+		background:grey;
+		color:white;
+		font-weight:bold;
+		transition:1s;
+	}
+
+	form:hover{
+		box-shadow: 0 0 11px 0 white;
+		transition:1s;
+		border:1px solid grey;
+	}
+
+	input{
+		float:right;
+		padding:2px;
+		vertical-align:middle;
+	}
+	label{
+		float:left;
+	}
+
+	input:valid:focus{
+		background:#00ff0033;
+	}
+
+	input:invalid:focus{
+		background:#ee412475;
+	}
+
+	.button button{
+		font-size:18px;
+		border:none;
+		transition: 1s;
+	}
+
+	.button{
+		margin:2px;
+	}
+
+	button:hover{
+		background:green;
+		transition: 1s;
+	}
+	button:focus{
+		background:red;
+		transition: 1s;
+	}
+	button:active{
+		background:orange;
+		transition: 1s;
+	}
+
+	.button a{
+		text-decoration:none;
+		color:black;
+	}
+
+	h1{
+		color:white;
+	}
+
+	.my_two_form{
+		text-align:left;
+	}
+
+	.my_two_form input{
+		float:left;
+	}
+
+	.my_two_form label{
+		float:left;
+	}
+
+	.my_two_form{
+		width:50%;
+	}
+
+	.my_two_form fieldset{
+		margin-top:20px;
+	}
+
+	.myINput input{
+		margin-left:10px;
+		width:100%;
+	}
+
+</style>
+
+<body>
+	<center>
+		<h1>АНКЕТА</h1>
+	<form action="" class = "my_two_form">
+		<div class = "myINput">
+		<label>Введіть ім'я: </label> <input type="text" name=""><br><hr><br>
+		<label>Email:</label> <input pattern="[A-Za-z]{3,}@[a-z]{4,}.[a-z]{3,}" placeholder = "Введіть Email" autocomplete="off" required type="email"><br>
+		<hr><br>
+		<label>Телефон:</label><input pattern="([0-9]{3}\)\s[0-9]{3}\s[0-9]{4}" placeholder = "Введіть номер телефона" required type="tel"><br>
+		<hr><br>
+		<label>Посилання на сайт:</label><input pattern = "https://[a-z]{3,}.[a-z]{2,}/" placeholder = "Введіть посилання на сайт" type="url"><br>
+		<hr><br>
+		<label>Password:</label><input pattern="[A-Za-z]{6,}" required placeholder = "Введіть пароль" type="password"><br>
+		<hr><br>
+		<label>Пошук по питаннями:</label> <input placeholder = "Пошук" type="search"><br>
+		<hr><br>
+		<label>Ваш вік:</label> <input placeholder = "Виберіть номер" type="number"><br>
+		<hr><br>
+		<label>Наскільки вам сподобались питання:</label> <input type="range"><br>
+		<hr><br>
+		<label for = "date">Виберіть дату вашого народження:</label> <input name = "date" required type="date"><br>
+		<hr><br>
+		<label>Введіть дату вручну:</label> <input placeholder = "Виберіть дату" type="datetime"><br>
+		<hr><br>
+		<label>Виберіть тиждень:</label> <input type="week"><br>
+		<hr><br>
+		<label>Виберіть час, в який вам зручно зателефонувати:</label> <input required type="time"><br>
+		<hr><br>
+		<label>Виберіть колір фону:</label> <input type="color"><br>
+		<hr><br>
+	</div>
+		<div class="button">
+<button type = "reset">Очистити</button> <button type = "submit">Відправити</button> <button><a href = "https://github.com/vitaliykyq">GitHub</a></button></div>
+<br><br>
+<h1>ОПИТУВАННЯ</h1>
+<br><br><br>
+
+
+  <fieldset>
+   <legend>Де Ви найчастіше дивитеся фільми?</legend>
+     <input type="radio" name="1"><lable>В кіно</lable><br>
+     <input type="radio" name="1"><lable>В інтернеті</lable><br>
+     <input type="radio" name="1"><lable>По телебаченню</lable><br>
+     <input type="radio" name="1"><lable>За допомогою портативного плеєра (MP3-плеєр, телефон, ...)</lable><br>
+  </fieldset>
+  <fieldset>
+   <legend>Як часто Ви ходите в кіно?</legend>
+     <select>
+		<option>Виберіть</option>
+		<option>Один раз на тиждень</option>
+		<option>Один раз на місяць</option>
+		<option>Кілька разів на рік</option>
+		<option>менш часто</option>
+		</select>
+  </fieldset>
+  <fieldset>
+   <legend>Звідки найчастіше Ви отримуєте мультимедіа?</legend>
+     <input type="radio" name="2"><lable>Куплю в магазині</lable><br>
+     <input type="radio" name="2"><lable>Куплю по Інтернету</lable><br>
+     <input type="radio" name="2"><lable>За допомогою знайомих</lable><br>
+     <input type="radio" name="2"><lable>Скачаю з Інтернету</lable><br>
+     <input type="radio" name="2"><lable>По телебаченню</lable><br>
+  </fieldset>
+  <fieldset>
+   <legend>Який телеканал ви дивитеся найчастіше?</legend>
+     <input type="text">
+  </fieldset>
+  <fieldset>
+   <legend>Ви граєте в комп'ютерні ігри?</legend>
+     <input type="radio" name="3"><lable>Так</lable><br>
+     <input type="radio" name="3"><lable>Час від часу</lable><br>
+     <input type="radio" name="3"><lable>ніколи</lable><br>
+     <input type="radio" name=""><lable></lable><br>
+  </fieldset>
+  <fieldset>
+   <legend>Яку сторінку мультимедіа Ви відвідуєте найчастіше?</legend>
+     <input type="text">
+  </fieldset>
+  <fieldset>
+   <legend>Скільки годин на день Ви в середньому приділяєте мультимедіа?</legend>
+     <input type="text">
+  </fieldset>
+  <fieldset>
+   <legend>Який формат відео Ви віддаєте перевагу?</legend>
+     <input type="radio" name="4"><lable>MKV</lable><br>
+     <input type="radio" name="4"><lable>MP4</lable><br>
+     <input type="radio" name="4"><lable>MPEG</lable><br>
+     <input type="radio" name="4"><lable>MOV</lable><br>
+     <input type="radio" name="4"><lable>Інший (уточніть, будь ласка): </lable>
+     <input type="text" placeholder="Введіть відповідь">
+  </fieldset>
+  <fieldset>
+   <legend>Яким аудіоформаті Ви користуєтеся, слухаючи музику?</legend>
+     <input type="radio" name="5"><lable>WMA</lable><br>
+     <input type="radio" name="5"><lable>FLAC</lable><br>
+     <input type="radio" name="5"><lable>OGG</lable><br>
+     <input type="radio" name="5"><lable>Іншим (уточніть, будь ласка):</lable>
+     <input type="text" placeholder="Введіть відповідь">
+  </fieldset><fieldset>
+   <legend>Напишіть, будь ласка, назву якої фірми Вам першим прийде в голову, якщо сказати "галузь-Вашої-діяльності-або-предмет-Вашої-діяльності"?</legend>
+     <input type="text" placeholder="Введіть пропозицію">
+  </fieldset><fieldset>
+  <legend>Чи знайоме Вам назву «назва фірми»?</legend>
+     <input type="radio" name="6"><lable>Ніколи не чув / а таке</lable><br>
+     <input type="radio" name="6"><lable>	Колись чув / а про неї, але ніколи не купував / а їх продукт / послугу</lable><br>
+     <input type="radio" name="6"><lable>Час від часу я купую їх продукти / послуги</lable><br>
+     <input type="radio" name="6"><lable>Регулярно купую їх продукти / послуги</lable><br>
+  </fieldset><fieldset>
+  <legend>Де Ви бачили рекламу "назва-фірми"?</legend>
+     <input type="checkbox" name=""><lable>По телебаченню, по радіо</lable><br>
+     <input type="checkbox" name=""><lable>В газетах / журналах</lable><br>
+     <input type="checkbox" name=""><lable>В інтернеті</lable><br>
+     <input type="checkbox" name=""><lable>У громадському транспорті</lable><br>
+     <input type="checkbox" name=""><lable>на білбордах</lable><br>
+     <input type="checkbox" name=""><lable>ніде</lable><br>
+  </fieldset><fieldset>
+  <legend>7 Як Ви оцінюєте нашу рекламу в порівнянні з рекламами наших конкурентів?</legend>
+     <input type="radio" name="7"><lable>Набагато краще</lable><br>
+     <input type="radio" name="7"><lable>трошки краще</lable><br>
+     <input type="radio" name="7"><lable>трошки гірше</lable><br>
+     <input type="radio" name="7"><lable>Набагато гірше</lable><br>
+  </fieldset><fieldset>
+  <legend>10 Що Вам не подобається в нашій рекламі найбільше?</legend>
+     <input type="text" placeholder="Введіть пропозцію">
+  </fieldset><fieldset>
+  <legend>11 Що Вам подобається в нашій рекламі найбільше?</legend>
+     <input type="text" placeholder="Введіть пропозцію">
+  </fieldset>
+	<br><br><br><br><br>
+	<textarea style = "width:100%; height:80px" maxlength = "200" spellcheck></textarea>
+	<input list="company" placeholder="Виберіть компанію"></p>
+	<datalist id="company">
+    	<option>Asus</option>
+    	<option>Samsung</option>
+    	<option>Acer</option>
+    	<option>HP</option>
+    	<option>Lenovo</option>
+    </datalist>
+    <br><br><br>
+     <progress value="25" max="100"></progress>
+<br><br>
+     <meter value="25" max="100"></meter><br>
+	 <meter value="50" max="100"></meter><br>
+	 <meter value="75" max="100"></meter><br>
+	 <meter value="100" max="100"></meter><br>
+ </form> 
+
+
+
+</center>
+
+</body>
+</html>

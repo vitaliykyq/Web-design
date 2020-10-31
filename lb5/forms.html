@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Лабораторна робота №6</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+
+
+	<form class="form_4">
+		<div class="shadow">
+			<div class="block_top">
+				<img src = "image/fon4_top.png" width = "73">
+				Вас запрошували?
+				<br>
+				Підтверджуйте			
+
+			</div>
+			<div class="block_content">
+				
+				Ваше ім'я:<br><br>
+				<input required type="text" pattern = "[A-ZА-Я]{1}[a-zа-я]{1,}"><br><br>
+				Гостей:<br><br>
+				<select style = "width: 40px;">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select><br><br>
+
+				Я запрошений...<br><br>
+
+				<select>
+					<option>на всі заходи</option>
+					<option>на церемонію</option>
+					<option>на вечірку</option>
+				</select><br><br>
+
+				<button>Я ПІДТВЕРДЖУЮ</button>
+
+			</div>
+
+			<div class="block_bottom">
+
+			</div>
+		</div>
+	</form>
+
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+
+	<form class="form_1">
+		<div class="imheader">
+			<img src = "image/circle.png" width = "43">
+		<div class="header">
+		</div>
+		</div>		
+
+		<div class="name">
+			Ім'я
+			<br>
+			<input type="text" style = "float:none; width:98%">
+		</div>
+
+		<div class="else">
+			<div style = "padding:7px;">
+				Адреса
+				<br>
+				<textarea style="height: 198px;">
+				</textarea>	
+			</div>
+			<br>
+			<div class = "block">
+				<input  type="tel" placeholder="мобільний номер">
+			</div>
+			<div class = "block">			
+				<input type="email" placeholder="ваша пошта">
+			</div>
+			<div class = "block">
+				<button>Відправити</button>
+			</div>
+		</div>
+
+	</form>
+
+
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+
+	<form class="form_2">
+		<div class = "line">
+			<div class="content">
+				Ваше ім'я
+				<br>
+				<input required type="text">
+				<br>
+
+				Ваш Email
+				<br>
+				<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required type="email">
+				<br>
+				Ваше повідомлення:
+				<br>
+				<textarea>
+				</textarea>
+				<br>
+				<button>ВІДПРАВИТИ ПОВІДОМЛЕННЯ</button>	
+			</div>
+		</div>
+
+
+	</form>
+
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+
+
+	<form class = "form_3">
+		<h1>Реєстрація</h1>
+		<hr><br>
+		<p>Ім'я користувача</p>
+		<input required class = "inp" type = "text">
+		<br>
+		<p>Пароль</p>
+		<input  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required class = "inp" type = "password">
+		<br><br>
+		<input required type="checkbox" style = "margin-left:10px;" checked>
+		<label>Запам'ятати мене</label>
+		<br><br>
+		<button>Відправити</button>
+	</form>
+
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+
+	<form class="form_5">
+		
+		<div class="general">
+			<div class = "fon">
+				
+				<center><b>Вхід на сайт</b></center>
+
+			</div>
+			<label id = "form_5_Email">Email</label><br>
+			<input onblur="myFunctionOne(this)" required id = "form_5_email" placeholder="Email" type = "email">
+			<br>
+			<label id = "form_5_Password">Пароль</label><br>
+			<input  onblur="myFunctionTwo(this)" required id = "form_5_password" placeholder="Пароль" pattern=".{8,}" type = "password">
+			<br>
+			<button>Вхід</button>	
+		</div>
+	</form>
+
+
+
+</body>
+
+
+</html>

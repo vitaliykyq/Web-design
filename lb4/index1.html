@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<style>
+	
+	a.test1:link{
+		color:red;
+	}
+
+	a.test2{
+		text-decoration:none;
+		border-bottom:5px solid black;
+	}
+
+	a.test2:visited{
+		color:green;
+	}
+
+	a.test3{
+		transition:1s;
+	}
+
+	a.test3:hover{
+		background:red;
+		transition:1s;
+	}
+
+	a.test4:active{
+		color:white;
+		background:black;
+	}
+
+	a.test5{
+		text-decoration:none;
+	}
+
+	a.test6{
+		text-decoration:none;
+	}
+
+	a.test6:hover{
+		text-decoration:underline;
+	}
+
+
+	/* Загальні стилі для всіх посилань */
+.button1 a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  font-size: 24px;
+  font-family: 'Fredoka One', cursive;
+  transition: .3s ease-in-out;
+}
+
+/*1-ше посилання*/
+.button1 .s1 {
+  color: #FFD201;
+  letter-spacing: 1px;
+  border-bottom: 1px solid transparent; 
+  border-top: 1px solid transparent;
+}
+.button1 .s1:hover {
+  border-bottom: 1px solid #FFD201; 
+  border-top: 1px solid #FFD201; 
+ }
+
+/*2-ге посилання*/
+.button1 .s2 {
+  color: #969696;
+  text-shadow: 1px 1px black;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+}
+.button1 .s2:hover {
+  color: #F54318;
+  border-bottom: 2px solid #F54318;
+  box-shadow: 0 1px 0 white, 0 2px 0 #969696;
+}
+
+/*3-тє посилання*/
+.button1 .s3 {
+  color: #BA7D67;
+  border: 2px solid transparent;
+}
+.button1 .s3:hover {border: 2px solid #BA7D67;}
+
+/*4-те посилання*/
+.button1 .s4 {
+  color: #2AABBA;
+  font-style: italic;
+  padding-left: 35px;
+  background: url(https://html5book.ru/wp-content/uploads/2019/04/pdf-icon.png) no-repeat left;
+  text-decoration: underline;
+}
+.button1 .s4:hover {color: #C9D414;}
+/*5-те посилання*/
+.button1 .s5 {
+  color: #CBB8AA;
+  position: relative;
+}
+.button1 .s5 {text-shadow: 1px 1px white, 2px 2px #6A5F55;}
+.button1 .s5:hover {text-shadow: 1px 1px 1px #6A5F55;}
+
+/*6-те посилання*/
+.button1 .s6 {
+  color: #E7805E;
+  border-bottom: 1px dashed;
+}
+.button1 .s6:hover {border-bottom: 1px solid #9B8381;}
+
+/*7-ме посилання*/
+.button1 .s7 {color: #D5A39C;}
+.button1 .s7:hover {transform: scaleX(1.1);}
+
+/*8-ме посилання*/
+.button1 .s8 {
+  color: #92B8C5;
+  text-shadow: 1px 1px 1px #555555;
+}
+.button1 .s8:hover {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+/*9-те посилання*/
+.button1 .s9 {
+  color: #B2BBC0;
+  text-shadow: 1px 0 #4D575D;
+}
+.button1 .s9:hover {transform: rotate(-5deg);}
+
+/*10-те посилання*/
+.button1 .s10 {
+  color: #B79DCC;
+  position: relative;
+}
+.button1 .s10:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  border-bottom: 3px dashed #C1CF00;
+  bottom: -5px;
+  transition: .5s ease-in-out;
+}
+.button1 .s10:hover:after {width: 0;}
+
+/*11-те посилання*/
+.button1 .s11 {
+  background-image: linear-gradient(#FE5568 50%, #FE5568 50%), linear-gradient(silver 50%, silver 50%); 
+  background-position: center bottom; 
+  background-repeat: no-repeat; 
+  background-size: 0 2px, 100% 2px; 
+  color: #1E3A52; 
+  padding-bottom: 3px; 
+  transition: .5s ease-in-out;
+}
+.button1 .s11:hover {
+  background-size: 100% 2px, 100% 2px;
+  color: #FE5568;
+}
+
+/*12-те посилання*/
+.button1 .s12 {
+  background-image: linear-gradient(#EE5E4F 50%, #EE5E4F 50%), linear-gradient(silver 50%, silver 50%); 
+  background-position: center bottom; 
+  background-repeat: no-repeat; 
+  background-size: 0 .063em, 100% .063em; 
+  color: #607584; 
+  padding-bottom: .188em; 
+  transition: background-size .5s;
+}
+.button1 .s12:hover {
+  background-size: 100% .063em, 100% .063em; 
+  background-position: left bottom;
+}
+
+/*13-те посилання*/
+.button1 .button1 .s13 a{
+  color:#34495e; 
+  line-height: 1.2; 
+  position: relative; 
+  padding: 0 14px; 
+  text-transform: uppercase;
+}
+
+.button1 .s13 a:after {
+  content: "";
+  height: 100%;
+  min-width: 4px;
+  background: #34495e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .5s;
+}
+.button1 .s13 a:hover:after {
+  min-width: 100%;
+  background: #95a5a6;
+  opacity: .35;
+}
+
+/*14-те посилання*/
+.button1 .s14 {
+  border-bottom: 2px solid #5be;
+  color: #555;
+  background-image: linear-gradient(180deg, transparent 65%, #5bf 65%);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+}
+.button1 .s14:hover {background-size: 100% 100%;}
+
+/* Загальні стилі для всіх кнопок */
+.button2 a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 15px 25px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.4s ease-in-out;
+}
+
+/*кнопка 1*/
+.button2 a.one {
+  border-radius: 10px;
+  color: #EC4D3C;
+  background-color: white;
+  background-image: -webkit-radial-gradient(#FCD2D1 2px, rgba(255,0,0,0) 2px);
+  background-image: -o-radial-gradient(#FCD2D1 2px, rgba(255,0,0,0) 2px);
+  background-image: radial-gradient(#FCD2D1 2px, transparent 2px);
+  background-size: 12px 12px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.button2 a.one:hover {background-size: 16px 16px;}
+
+
+/*кнопка 2*/
+.button2 a.two {
+  border-radius: 10px;
+  color:  #F17434;
+  background-color: white;
+  background-image: 
+  -webkit-repeating-linear-gradient(45deg, #FFDDBB, #FFDDBB 1px, rgba(255,0,0,0) 2px, rgba(255,0,0,0) 10px),
+  -webkit-repeating-linear-gradient(135deg, #FFDDBB, #FFDDBB 1px, rgba(255,0,0,0) 2px, rgba(255,0,0,0) 10px);
+  background-image: 
+  -o-repeating-linear-gradient(45deg, #FFDDBB, #FFDDBB 1px, rgba(255,0,0,0) 2px, rgba(255,0,0,0) 10px),
+  -o-repeating-linear-gradient(135deg, #FFDDBB, #FFDDBB 1px, rgba(255,0,0,0) 2px, rgba(255,0,0,0) 10px);
+  background-image: 
+  repeating-linear-gradient(45deg, #FFDDBB, #FFDDBB 1px, transparent 2px, transparent 10px),
+  repeating-linear-gradient(135deg, #FFDDBB, #FFDDBB 1px, transparent 2px, transparent 10px);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.button2 a.two:hover {
+  background-image: 
+  -webkit-repeating-linear-gradient(left, #FFDDBB, #FFDDBB 1px, rgba(255,0,0,0) 2px, rgba(255,0,0,0) 10px);
+  background-image: 
+  -o-repeating-linear-gradient(90deg, #FFDDBB, #FFDDBB 1px, rgba(255,0,0,0) 2px, rgba(255,0,0,0) 10px);
+  background-image: 
+  repeating-linear-gradient(90deg, #FFDDBB, #FFDDBB 1px, transparent 2px, transparent 10px);
+}
+
+/*кнопка 3*/
+.button2 a.three {
+  border-radius: 10px;
+  color:  #36454A;
+  background: -webkit-linear-gradient(top, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+  background: -o-linear-gradient(top, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+  background: linear-gradient(to top, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+  box-shadow: 2px 2px 3px black;
+}
+.button2 a.three:hover {
+  background: -webkit-linear-gradient(bottom, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+  background: -o-linear-gradient(bottom, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+  background: linear-gradient(to bottom, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+}
+
+/*кнопка 4*/
+.button2 a.four{
+  border-radius: 10px;
+  color: #598428;
+  background: -webkit-linear-gradient(70deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: -o-linear-gradient(20deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: linear-gradient(20deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.button2 a.four:hover {
+  background: -webkit-linear-gradient(-110deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: -o-linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  background: linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+}
+
+/*кнопка 5*/
+.button2 a.five {
+  border-radius: 10px;
+  color: #40382D;
+  box-shadow: inset 0 -5px 0 #40382D;
+}
+.button2 a.five:hover {
+  box-shadow: inset 0 -60px 0 #40382D, 2px 2px 3px rgba(0,0,0,0.3);
+  color: #DECDA5;
+}
+
+/*кнопка 6*/
+.button2 a.six  {
+  border-radius: 10px;
+  color: #CEA640;
+  background: #FFF79A;
+  border-bottom: 5px solid #E1B442;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.button2 a.six:hover {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+/*кнопка 7*/
+.button2 a.seven {
+  color: #45A0A4;
+  background: -webkit-linear-gradient(right, #E3612C 0, #E3612C 33.3%, #FCCE30 33.3%, #FCCE30 66.6%, #58554B 66.6%, #58554B) bottom no-repeat;
+  background: -o-linear-gradient(right, #E3612C 0, #E3612C 33.3%, #FCCE30 33.3%, #FCCE30 66.6%, #58554B 66.6%, #58554B) bottom no-repeat;
+  background: linear-gradient(to right, #E3612C 0, #E3612C 33.3%, #FCCE30 33.3%, #FCCE30 66.6%, #58554B 66.6%, #58554B) bottom no-repeat;
+  background-size: 70% 5px;
+}
+.button2 a.seven:hover {background-size: 100% 5px;}
+
+/*кнопка 8*/
+.button2 a.eight {
+  border-radius: 10px;
+  background: #E8CCB5;
+  color: #B05151;
+  padding: 15px 30px;
+  position: relative;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.button2 a.eight:before, a.eight:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F58262;
+  box-shadow: inset 0 -2px 0 #B05151;
+  opacity: 0;
+  transition: .button2 .5s ease-in-out;
+}
+.button2 a.eight:before {left: 13px;}
+.button2 a.eight:after {right: 13px;}
+.button2 a.eight:hover:before, a.eight:hover:after {opacity: 1;}
+
+/*кнопка 9*/
+.button2 a.nine {
+  color: #E7E5DD;
+  text-shadow: 1px 1px black;
+  background: url(https://html5book.ru/wp-content/uploads/2015/01/borger-grey.png) repeat-x;
+  border-bottom: 1px solid  #bfc1ad;
+  border-left: 1px solid  #bfc1ad;
+  border-right:  1px solid  #bfc1ad;
+}
+.button2 a.nine:hover {background-position: 300px 0;}
+
+/*кнопка 10*/
+.button2 a.ten {
+  color: #E7E5DD;
+  border-radius: 25px;
+  border: 3px solid #E7E5DD;
+}
+.button2 a.ten:hover {
+  color: #BDB9AB;
+  background: #E7E5DD;
+}
+.button2 .ten a span {
+  opacity: 0;
+  padding-left: 5px; 
+  padding-right: 5px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+.button2 a.ten :hover span {
+  opacity: 1;
+  padding-left: 10px; 
+  padding-right: 10px;
+  color: #BDB9AB;
+}
+
+/*кнопка 11*/
+.button2 a.eleven {
+  box-sizing: border-box;
+  border: 1px solid white;
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  padding: 15px 40px;
+  position: relative;
+}
+.button2 a.eleven:after {
+  content: "";
+  display: block;
+  border: 1px solid white;
+  position: absolute;
+  top: -5px;
+  right: 3px;
+  bottom: -5px;
+  left: 3px;
+}
+
+.button2 .elevenButton{
+	background:black;
+	display: inline-block;
+}
+
+</style>
+
+<body>
+	<a>Текст</a><br>
+	<a href="Text.txt" download="Text.txt">Завантаження документа</a><br>
+
+
+	<a href="http://google.com/"><img src="https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg" alt=""></a>
+	<a href="https://github.com/" target = "_blank"><img src="https://pbs.twimg.com/profile_images/823569976342773760/c2RLAG7h_400x400.jpg" alt=""></a>
+
+	<br><br>
+
+	<a class = "test1" href="#1234">:link</a><br>
+	<a class = "test2" href="#">:visited</a><br>
+	<a class = "test3" href="#">:hover</a><br>
+	<a class = "test4" href="#">:active</a><br>
+	<a href="#" class = "test5">Посилання без підкреслення</a><br>
+	<a href="#" class="test6">Підкреслення при наведені</a><br><br>
+
+	<a style = "font-size:50px; background: url(https://www.etoilewebdesign.com/wp-content/uploads/2016/01/Youtube.png) no-repeat left; background-size:50px; padding-left:50px" href="#">Картинка перед посиланням</a>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a name = "text">Текст на якого буде посилатись якорь</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<div class="button1">
+		<a href="#" class="s1">Text</a><br>
+		<a href="#" class="s2">Text</a><br>
+		<a href="#" class="s3">Text</a><br>
+		<a href="#" class="s4">Text</a><br>
+		<a href="#" class="s5">Text</a><br>
+		<a href="#" class="s6">Text</a><br>
+		<a href="#" class="s7">Text</a><br>
+		<a href="#" class="s8">Text</a><br>
+		<a href="#" class="s9">Text</a><br>
+		<a href="#" class="s10">Text</a><br>	
+		<a href="#" class="s11">Text</a><br>
+		<a href="#" class="s12">Text</a><br>
+		<a href="#" class="s13">Text</a><br>
+		<a href="#" class="s14">Text</a><br>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="button2">
+		<a href="#" class="one">one</a>
+		<a href="#" class="two">two</a>
+		<a href="#" class="three">three</a>
+		<a href="#" class="four">four</a>
+		<a href="#" class="five">five</a>
+		<a href="#" class="six">six</a>
+		<a href="#" class="seven">seven</a>
+		<a href="#" class="eight">eight</a>
+		<a href="#" class="nine">nine</a>
+		<a href="#" class="ten">ten</a>
+		<div class="elevenButton">
+			<a href="#" class="eleven">eleven</a>
+		</div>
+	</div>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<a href="#">Посилання заглушка</a>
+	<a href="#text">Якорь</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+a{
+	color:red;
+}
+
+table{
+
+}
+
+td{
+	
+}
+
+th{
+	border-bottom: 1px solid black;
+	width:150px;
+	text-align: left;
+}
+
+tr{
+
+}
+
+.back:hover{
+	background: gray;
+}

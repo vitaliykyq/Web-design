@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<style>
+
+  body{background:#a0a0a0}
+
+  
+  .div_general_task{
+    margin:0 0 3% 0;
+  }
+
+  .task1{
+    border:1px solid black;
+    display: inline-block;
+    padding: 3%;
+    background: #dadada;
+  }
+
+  .task2{
+    border:1px solid black;
+    display: inline-block;
+    padding: 3%;
+    background: #dadada;
+  }
+
+  .task3{
+    border:1px solid black;
+    display: inline-block;
+    padding: 3%;
+    background: #f9f9f9;
+  }
+
+
+  .task1 input{
+    margin-top:2px;
+  }
+  .task1 button{
+    margin-top:3px;
+  }
+
+  .task3 table{
+    border: 0px solid black;
+    width:1000px;
+  }
+
+  .task3 tr{border: 0px solid black;}
+
+  .task3 td{border: 0px solid black; padding: 5%;}
+
+  .vertborder {
+    border-left: 1px solid grey;
+    height: 350px;
+    width: 1px;
+  } 
+
+  .task3 .button{
+    background: #d8d8d8;
+    border-radius:10px;
+    height:70px;
+    width:340px;
+    display: table-cell;
+    vertical-align: middle;
+
+  }
+  
+
+  .task3 .button a.facebook{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/768px-Facebook_icon.svg.png) no-repeat left;
+    background-size:25%;
+    padding-left: 55px;
+    font-size:40px;
+    color:blue;
+    text-decoration:none;
+  }
+
+  .task3 .button a.google{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png) no-repeat left;
+    background-size:25%;
+    padding-left: 55px;
+    font-size:40px;
+    color:blue;
+    text-decoration:none;
+  }
+
+  .task3 .myInput input{
+    width:100%;
+    height: 40px;
+  }
+
+  .task3 .buttonEnter{
+    width: 520px;
+    height:50px;
+    background:green;
+    border-radius:10px;
+    vertical-align: middle;
+    display: table-cell;
+    transition:1s;
+  }
+
+  .task3 .buttonEnter:hover{
+    background:#309830;
+    transition:1s;
+  }
+
+  .task3 .buttonEnter a.enter{
+    text-decoration:none;
+    color:white;
+    display: block;
+  } 
+
+.hrcenter{
+  /*border:1px solid black;*/
+  width:25px;
+}
+</style>
+
+<body>
+
+  <div class="div_general_task">
+
+    <div class = "task1">
+
+      <form action="">
+        <label>First name </label>
+        <input type = "text" placeholder = "Enter first name"><br>
+        <label>Last name </label>
+        <input type = "text" placeholder = "Enter last name"><br>
+        
+        <label>Email </label>
+        <input type = "email" placeholder = "Enter email"><br>
+
+        <label>Password </label>
+        <input type = "password" placeholder = "Enter password"><br>
+
+        <label>Born in </label>
+        <input type = "date"><br>
+
+        <label>eu</label>
+        <input type = "radio" name = "country">
+        <label>ua</label>
+        <input type = "radio" name = "country">
+        
+        <br>
+
+        <select> 
+        <option>select gender</option> 
+        <option>Male</option> 
+        <option>Female</option> 
+        </select> 
+
+        <br>
+
+        <button>Send</button>
+
+        <br><br>
+        <input type="file">
+      </form>
+
+    </div>
+
+  </div>
+
+  <div class="div_general_task">
+    <div class="task2">
+      
+      <form action="">
+
+      <table>
+        
+        <tr><td><label>Логін: </label></td><td><input type="email" name=""></td>
+        <tr><td><label>Пароль: </label></td><td><input type="password" name=""></td>
+        <tr><td><label>Повторіть пароль: </label></td><td><input type="password" name=""></td>
+        <tr><td><label>Стать: </label></td><td>
+        <input type="radio" name="tx1"><label for="">чоловік</label>
+        <input type="radio" name="tx1"><label for="">жінка</label>
+        </td>  
+
+        <tr><td><label>Вкажіть місто: </label></td><td>
+          
+          <select name="" id="" size = "4">
+            <option>Житомир</option>
+            <option>Київ</option>
+            <option>Львів</option>
+          </select>
+
+        </td>
+        
+        <tr><td><label>Інтереси: </label></td><td>
+          
+          <input type="checkbox">
+          <label>футбол</label>
+          <input type="checkbox">
+          <label>шахи</label>
+          <input type="checkbox">
+          <label>малювання</label>
+          <input type="checkbox">
+          <label>музика</label>
+        </td>  
+
+        <tr><td></td><td>
+
+          <button type = "reset">Очистити</button>
+          <button type = "submit">Відправити</button>
+
+        </td>
+
+      </table>
+
+      </form>
+    
+    </div>
+
+  </div>
+
+  <div class="div_general_task">
+    <div class="task3">
+      
+      <table>
+        
+        <tr><td colspan="4" style = "padding: 5%; font-size:30px; border-bottom:1px solid black;">Вход<span style = "float:right">X</span></td></tr>
+        <tr><td style = "vertical-align: top; width:50%;">
+          <div class = "myInput">
+            <label>Эл. почта или телефон</label><br>
+            <input type="text">
+            <br><br>
+            <label>Пароль</label><br>
+            <input type="password">
+        </div>
+
+        <br>
+        <input type="checkbox" checked style = "color:green;">
+        <label>Запомнить меня</label>
+        <span style = "float:right;"><a href = "#">Напомнить пароль</a></span>
+        
+        <br><br><br>
+
+        <center>
+          <div class="buttonEnter">
+            <a class = "enter" href = "#">Войти</a>
+          </div>
+          <br>
+          <a href = "#">Зарегистрироватся</a>
+        </center>
+
+
+        </td>
+
+
+        <td rowspan = "2">
+          
+        <div class="hrcenter">    
+            <div class="vertborder" style = "height: 135px; margin-left:50%;">
+            </div>
+              <p>или</p>
+              <div class="vertborder" style = "height: 135px; margin-left:50%;">
+            </div>
+
+        </div> 
+
+        </td><td style = "vertical-align: top;"><center><a style = "font-size:20px; color:grey;">Войти как пользователь</a><br><br>
+
+        
+        <div class = "button">
+        <a class = "facebook" href = "#">Facebook</a><br>
+        </div>
+        <br>
+        <div class = "button">
+        <a class = "google" href = "#">Google</a><br>
+        </div>
+        
+        </center>
+        </td></tr>
+          
+      </table>
+
+    </div>
+  </div>
+
+
+  <div class="div_general_task">
+    <div class="task3">
+      
+      <table>
+        
+        <tr><td colspan="4" style = "padding: 5%; font-size:30px; border-bottom:1px solid black;">Вход<span style = "float:right">X</span></td></tr>
+        <tr><td colspan="2" style = "vertical-align: top; width:50%;">
+          <div class = "myInput">
+            <label>Фамилия</label><br>
+            <input type="text">
+            <br><br>
+            <label>Имя</label><br>
+            <input type="text">
+            <br><br>
+            <label>Эл. почта или телефон</label><br>
+            <input type="text">
+            <br><br>
+            <label>Придумайте пароль</label><br>
+            <input id = "password_visible" style = "width:90%" type="password">
+            <a href="javascript:Visible();"><img id = "password_image" src = "images2.png" width = "40" style = "margin-left:5px;position:absolute"></a>
+        </div>
+
+        <br>
+        <input type="checkbox" checked>
+        <label>Запомнить меня</label>
+        <span style = "float:right;"><a href = "#">Напомнить пароль</a></span>
+        
+        <br><br>
+
+        <p style = "color:grey">Пароль должен быть не менее 6 символов, содержать цифры и латинские буквы, в том числе заглавные, и нее должен совпадать с именем и эл. почтой
+        Регистрируясь, вы соглашайтесь с <a href = "#" style = "text-decoration:none; color:blue;">пользовательским соглашением</a></p>
+
+
+        <center>
+          <div class="buttonEnter">
+            <a class = "enter" href = "#">Зарегистрироватся</a>
+          </div>
+          <br>
+          <a href = "#">Я уже зарегистрирован</a>
+        </center>
+
+
+
+        </td>
+
+
+        <td rowspan = "2">
+          <div class="hrcenter">
+            
+            <div class="vertborder" style = "height: 255px; margin-left:50%;">
+            </div>
+              <p>или</p>
+              <div class="vertborder" style = "height: 255px; margin-left:50%;">
+            </div>
+
+        </div>  
+        </td><td style = "vertical-align: top;"><center><a style = "font-size:20px; color:grey;">Войти как пользователь</a><br><br>
+
+        
+        <div class = "button">
+          <a class = "facebook" href = "#">Facebook</a><br>
+        </div>
+        <br>
+        <div class = "button">
+        <a class = "google" href = "#">Google</a><br>
+        </div>
+        
+        </center>
+        </td></tr>
+          
+      </table>
+
+    </div>
+  </div>
+
+<script>
+  
+  function Visible(){
+    let element = document.getElementById("password_visible");
+    let img_element = document.getElementById("password_image");
+
+    if(element.getAttribute("type") == "password"){
+      element.setAttribute("type", "text");
+      img_element.setAttribute("src", "images.png");
+    }
+    else{
+      element.setAttribute("type", "password");
+      img_element.setAttribute("src", "images2.png");
+    }
+  }
+
+
+</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,329 @@
+
+.form_3 h1, p{
+	text-transform: uppercase;
+	font-family: "Times roman", courier, serif;
+}
+
+.form_3 h1{
+	color:white;
+}
+
+.form_3 p{
+	color: #eaeaea;
+	margin-left:10px;
+}
+
+.form_3 hr{
+	border: none;
+	background:blue;
+	height:2px;
+	width:30%;
+	float:left;
+}
+
+.form_3 input[type="text"], .form_3 input[type="password"]{
+	width:300px;
+	height:40px;
+	font-size:15px;
+	border:none;
+	border-radius:20px;
+	background:#ffffff85;
+	color:white;
+	outline:none;
+	padding-left:20px;
+	
+}
+
+.form_3 input:focus{
+	background:#edf7fdf2;
+	color:black;
+
+}
+
+.form_3 label{
+	color:#c1c1c1;
+}
+
+.form_3 button{
+	width:100%;
+	color:white;
+	background:#1762ef;
+	padding:15px;
+	border: none;
+	border-radius:20px;
+}
+
+.form_3{
+	display: table-cell;
+ 	border:1px solid black;
+ 	padding:35px;
+ 	background-image: url(https://bankoboev.ru/storage/fon/bankoboev.ru-9012.jpg);
+ }
+
+.form_5{
+	display: table-cell;
+	padding:30px;
+	border: 7px solid #5fbdcc38;
+}
+
+.form_5 input{
+	width:300px;
+	height:20px;
+	margin-bottom:40px;
+	border:none;
+	border-bottom:2px solid #25b6fb;
+	font-size:25px;
+	height:50px;
+	padding:5px;
+	outline:none;
+}
+
+.form_5 input:focus{
+	border-bottom:2px solid #d64d4d;
+}
+
+
+
+.form_5 .fon{
+	padding: 60px;
+	background-image:url(image/fon5_background.png);
+	background-size:cover;
+	font-size:35px;
+	color:blue;
+}
+
+.form_5 button{
+	width:100%;
+	padding:15px;
+	color:white;
+	background:blue;
+	font-size:20px;
+}
+
+.form_5 label{
+	font-size:19px; 
+	color:#d64d4d; 
+	display:none;
+}
+
+.form_4{
+	display:table-cell;
+	padding:10px;
+	background:#f5dec4;
+	padding-top:40px;
+}
+
+.form_4 .block_top{
+	text-transform: uppercase;
+	text-align: center;
+	padding:30px;
+	padding-top:65px;
+	background:white;
+	border-bottom:3px solid #f5dec4;
+}
+
+.form_4 .block_top img{
+	position: absolute;
+	top:8px;
+	left:95px;
+	filter: grayscale(1);
+}
+
+.form_4 .block_content{
+	background:#f9f2ea;
+	text-align:center;
+	padding:20px;
+	color:grey;
+	font-size:20px;
+
+}
+
+.form_4 input{
+	background: #d5e9ef;
+	height:20px;
+	padding: 3px;
+	border:1px solid black;
+}
+
+.form_4 select{
+	font-size:15px;
+	color:grey;
+	height:30px;
+}
+
+.form_4 button{
+	width:100%;
+	height:30px;
+	border-radius:20px;
+	border:none;
+	color:white;
+	background:#ff6161;
+}
+
+.form_4 .block_bottom{
+	width:100%;
+	height:15px;
+	background:white;
+}
+
+.form_4 .shadow{
+	box-shadow: 0 0 5px 1px black;
+}
+
+.form_2{
+	border:1px solid black;
+	display:table-cell;
+	padding:15px;
+	background:#ffdbe1;
+}
+
+.form_2 .line{
+	border:1px solid black;
+	padding: 15px;
+	background-image:url(https://img.freepik.com/free-photo/pink-stripes-on-white-board_23-2147990821.jpg?size=626&ext=jpg);
+	background-size:100%;
+}
+
+.form_2 .line .content{
+	border:1px solid black;
+	padding:10px;
+	background:#fffce8;
+	color:black;
+	width:270px;
+}
+
+.form_2 input{
+	height:30px;
+	border:none;
+	border-bottom:2px dotted grey;
+	margin-bottom:10px;
+	outline:none;
+	width:95%;
+	background:#fffce8;
+	padding-left:10px;
+
+}
+
+.form_2 textarea{
+	height:100px;
+	border:none;
+	border-bottom:2px dotted grey;
+	margin-bottom:10px;
+	width:100%;
+	background:#fffce8;
+}
+
+
+.form_2 input:focus{
+	border-bottom:2px dotted #c0e0ef;
+	background:#c0e0ef;
+}
+
+.form_2 button{
+	height:40px;
+	color:white;
+	background:#af0028;
+	border:none;
+	width:90%;
+	margin-bottom:25px;
+}
+
+.form_2 button:hover{
+	background:#da2e55;
+}
+
+.form_1{
+
+	display:table-cell;
+	padding:7px 10px 7px 10px;
+	background:#ececec;
+	width:250px;
+}
+
+.form_1 .header{
+	height:30px;
+	border:2px solid grey;
+	background-image: url(image/fon1.png);
+	background-size:100%;
+	text-align:center;
+	
+
+}
+.form_1 .name{
+	border:2px solid grey;
+	border-top:none;
+	padding:7px;
+}
+
+.form_1 .else{
+	border:2px solid grey;
+	border-top:none;
+	padding-bottom:0px;
+}
+
+.form_1 input{
+	width: 88%;
+	height:18px;
+	border:none;
+	background:#ececec;
+	outline:none;
+	float:right;
+	font-size:10px;
+
+}
+
+.form_1 input:focus{
+	background:#caedef;
+}
+
+.form_1 textarea{
+	width: 98%;
+}
+
+.form_1 div.block{
+	width:100%;
+	height:23px;
+	background:grey;
+	color:grey;
+	border-top:2px solid #ececec;
+}
+
+.form_1 span{
+	width:22%;
+	float left;
+}
+
+.form_1 button{
+	width: 89.5%;
+	height:23px;
+	border:none;
+	background:#ececec;
+	outline:none;
+	float:right;
+	font-size:10px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.form_1 .imheader{
+	text-align:center;
+}
+
+.form_1 .imheader img{
+	margin-left:-17px;
+	margin-top:-5px;
+	position: absolute;
+}
+
+.form1 div .block input {
+    height: 22px;
+}
+
+.form1 div.block{
+    margin-bottom: 2px;
+    width: 100%;
+    height: 23px;
+    background: grey;
+    color: grey;
+    border-top: 2px solid grey;
+}
