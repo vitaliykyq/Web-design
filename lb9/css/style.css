@@ -6,6 +6,10 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 header {
     background-image: url('../img/logo.svg');
     background-repeat: no-repeat;
